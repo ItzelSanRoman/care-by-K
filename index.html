@@ -479,13 +479,13 @@
             alert("¡API Key guardada con éxito! 💕");
         }
 
-        async function consultarIA(alimento) {
-            const apiKey = localStorage.getItem('gemini_api_key'); // Usamos el mismo campo guardado
+        async function buscarAlimentoIA(alimento) {
+            const apiKey = localStorage.getItem('gemini_api_key');
             if (!apiKey) {
                 alert("Por favor configura tu API Key primero.");
                 return;
             }
-        
+            
             const resultDiv = document.getElementById('ia-result');
             resultDiv.innerHTML = '<div class="text-center p-4"><i class="fas fa-spinner fa-spin text-2xl text-pink-500"></i><p class="mt-2 text-sm text-gray-600">Consultando con OpenRouter...</p></div>';
         
