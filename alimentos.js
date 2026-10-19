@@ -1,19 +1,19 @@
 const baseAlimentos = [
     {
         keywords: ['cerdo', 'puerco', 'carnitas', 'chicharron', 'tocino', 'longaniza', 'chorizo'],
-        estado: '🔴 **PROHIBIDO**',
+        estado: '<i class="fa-solid fa-ban text-red-500"></i> PROHIBIDO <i class="fa-solid fa-ban text-red-500"></i>',
         tipo: 'red',
         motivo: 'El cerdo es alto en grasas saturadas y dificulta el trabajo del hígado con Dotbal. Solo se permiten cortes 100% magros (como lomo magro) cocinados al vapor o asados sin aceite, pero evita fritos y carnitas.'
     },
     {
         keywords: ['tacos', 'taco', 'pastor', 'suadero', 'barbacoa', 'birria'],
-        estado: '🟡 **PRECAUCIÓN**',
+        estado: '<i class="fa-solid fa-triangle-exclamation text-amber-500"></i> PRECAUCIÓN <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>',
         tipo: 'yellow',
         motivo: 'Si son de pechuga de pollo o carne asada magra con tortillas a la plancha, son permitidos. Evita tacos grasosos (suadero, pastor, carnitas) y salsas demasiado irritantes.'
     },
     {
         keywords: ['leche', 'queso', 'yogurt', 'crema', 'lacteos', 'licuado'],
-        estado: '🔴 **PROHIBIDO EN EL ALMUERZO** / 🟡 **SOLO EN CENA**',
+        estado: '🔴 **PROHIBIDO EN EL ALMUERZO** / <i class="fa-solid fa-triangle-exclamation text-amber-500"></i> SOLO EN CENA <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>',
         tipo: 'red',
         motivo: 'El calcio de los lácteos bloquea totalmente la absorción del Moxifloxacino. Prohibido consumir lácteos entre 12:00 PM y 6:00 PM. Consúmelos únicamente en la cena.'
     },
@@ -25,7 +25,7 @@ const baseAlimentos = [
     },
     {
         keywords: ['cafe', 'cafecito', 'espresso', 'cappuccino'],
-        estado: '🟡 **PRECAUCIÓN**',
+        estado: '<i class="fa-solid fa-triangle-exclamation text-amber-500"></i> PRECAUCIÓN <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>',
         tipo: 'yellow',
         motivo: 'El Moxifloxacino reduce la eliminación de cafeína y puede causarte taquicardia o ansiedad. Limítalo a máximo 1 taza pequeña por la mañana.'
     },
@@ -85,13 +85,13 @@ const baseAlimentos = [
     },
     {
         keywords: ['refresco', 'coca', 'soda', 'coca cola', 'pepsi'],
-        estado: '🔴 **PROHIBIDO**',
+        estado: '<i class="fa-solid fa-ban text-red-500"></i> PROHIBIDO <i class="fa-solid fa-ban text-red-500"></i>',
         tipo: 'red',
         motivo: 'Su alto contenido de azúcar y quimicos sobrecarga los riñones y causa irritación gástrica con tus medicamentos.'
     },
     {
         keywords: ['pan', 'pan dulce', 'galletas', 'pastel'],
-        estado: '🟡 **PRECAUCIÓN**',
+        estado: '<i class="fa-solid fa-triangle-exclamation text-amber-500"></i> PRECAUCIÓN <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>',
         tipo: 'yellow',
         motivo: 'Consumir con moderación. El exceso de azúcares y grasas refinadas puede causar pesadez estomacal.'
     },
